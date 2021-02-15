@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the DOM</title>
+    <style>
+        .order[order-state="green"] {
+            color: green;
+        }
+
+        .order[data-order-state="green"] {
+            color: green;
+        }
+
+        .order[data-order-state="red"] {
+            color: red;
+        }
+
+        .order[order-state="red"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>Begin</div>
+
+    <ul>
+        <li>Information</li>
+    </ul>
+
+    <div>End</div> -->
+    <!-- <script src="./DOMTree.js"></script> -->
+
+    <!--
+        Related to the Attributes and the properties
+    -->
+
+    <!-- <div id="jst-demo" class="test-body" something="Random Attribute"></div> -->
+    <!-- <script src="./attributAndProperties.js"></script> -->
+
+    <div id="div" style="background-color: pink;height: 100px;width: 100px;"></div>
+    <input type="checkbox" id="input" checked>Checkbox
+    <a href="#hello" id="a"></a>
+
+    <!--Understanding the Non-standard attributes and the dataset-->
+    <div show-info="name"></div>
+    <div show-info="age"></div>
+
+    <!--Styling the element on the basics of the attributes-->
+    <div class="order" order-state="green">Green</div>
+    <div class="order" order-state="red">Red</div>
+    <div class="order" id="order" data-order-state="green">Data Green</div>
+    <script src="./formRelated.js"></script>
+</body>
+
+</html>
